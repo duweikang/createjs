@@ -1,0 +1,11 @@
+let canvas;
+let stage;
+let text;
+canvas = document.getElementById("gameView");
+stage = new createjs.Stage(canvas);
+text = new createjs.Text("这是我的createjs的第一个demo","20px Arial","#ff7700");
+text.x = 20;
+text.y = 200;
+text.textBaseline = "middle";
+stage.addChild(text);
+stage.update();
